@@ -10,23 +10,21 @@ import AVFoundation
 
 class SoundPlayer: NSObject {
     
+    //music.linkのようにクラスのプロパティやクラスのメソッドを参照するときは関数の中で定義しなければならない
     var music : Music
-    
     
     init(music:Music){
         self.music = music
     }
-    
-    //Declare SoundData
-    var musicData = NSDataAsset(name:music.link)!.data
-    
-    
     //Declare Variable
     var musicPlayer : AVAudioPlayer!
     
     func playMusic() {
         
         do{
+            //Declare SoundData
+            let musicData = NSDataAsset(name: music.link)!.data
+            
             //import AudioData
             musicPlayer = try AVAudioPlayer(data: musicData)
             
@@ -40,6 +38,9 @@ class SoundPlayer: NSObject {
     
     func pauseMusic() {
         do{
+            //Declare SoundData
+            let musicData = NSDataAsset(name: music.link)!.data
+            
             //import AudioData
             musicPlayer = try AVAudioPlayer(data: musicData)
             
