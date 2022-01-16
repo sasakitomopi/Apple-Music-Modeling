@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "artist":"William Ekh",
+        "song":"Adventures(feat.Alexa Lusader)",
+        "link":"Adventures"
+    },
+    {
+        "id": 2,
+        "artist":"Blank VIP",
+        "song":"Disfigure",
+        "link":"Blank"
+    },
+    {
+        "id": 3,
+        "artist":"Tobu",
+        "song":"Candyland",
+        "link":"Candyland"
+    },
+    {
+        "id": 4,
+        "artist":"K-391",
+        "song":"Earth",
+        "link":"Earth"
+    },
+    {
+        "id": 5,
+        "artist":"Alan Walker",
+        "song":"Fade",
+        "link":"Fade"
+    },
+    {
+        "id": 6,
+        "artist":"Syn Cole",
+        "song":"Feel Good",
+        "link":"Feel Good"
+    },
+    {
+        "id": 7,
+        "artist":"Tobu",
+        "song":"Hope",
+        "link":"Hope"
+    },
+    {
+        "id": 8,
+        "artist":"Jim Yoself",
+        "song":"Can't Wait",
+        "link":"Jim Yoself"
+    },
+    {
+        "id": 9,
+        "artist":"Major Lazer",
+        "song":"Light it Up",
+        "link":"Light It Up"
+    },
+    {
+        "id": 10,
+        "artist":"Diiferent Heaven & EH!DE",
+        "song":"My Heart",
+        "link":"My Heart"
+    },
+    {
+        "id": 11,
+        "artist":"Diiferent Heaven",
+        "song":"Heaven",
+        "link":"Heaven"
+    },
+    {
+        "id": 12,
+        "artist":"Cartoon",
+        "song":"On & On",
+        "link":"On & On"
+    },
+    {
+        "id": 13,
+        "artist":"Spektrem",
+        "song":"Shine",
+        "link":"Shine"
+    },
+    {
+        "id": 10,
+        "artist":"Electro-Light",
+        "song":"Symbolism",
+        "link":"Symbolism"
+    }
+]

@@ -11,6 +11,24 @@
 		CE9219C6274DA76200801AE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9219C5274DA76200801AE4 /* ContentView.swift */; };
 		CE9219C8274DA76400801AE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9219C7274DA76400801AE4 /* Assets.xcassets */; };
 		CE9219CB274DA76400801AE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9219CA274DA76400801AE4 /* Preview Assets.xcassets */; };
+		CE9219D2274DAC9D00801AE4 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9219D1274DAC9D00801AE4 /* SoundPlayer.swift */; };
+		CEDC105727522AA600A13801 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC105527522AA600A13801 /* Music.swift */; };
+		CEDC105827522AA600A13801 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC105627522AA600A13801 /* ModelData.swift */; };
+		CEDC105A27522B3000A13801 /* musicPlayer.json in Resources */ = {isa = PBXBuildFile; fileRef = CEDC105927522B3000A13801 /* musicPlayer.json */; };
+		CEDC106A27522EC100A13801 /* Jim Yosef.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEDC105C27522EBF00A13801 /* Jim Yosef.mp3 */; };
+		CEDC106B27522EC100A13801 /* Candyland.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEDC105D27522EC000A13801 /* Candyland.mp3 */; };
+		CEDC106C27522EC100A13801 /* Hope.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEDC105E27522EC000A13801 /* Hope.mp3 */; };
+		CEDC106D27522EC100A13801 /* Light It Up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEDC105F27522EC000A13801 /* Light It Up.mp3 */; };
+		CEDC106E27522EC100A13801 /* Feel Good.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEDC106027522EC000A13801 /* Feel Good.mp3 */; };
+		CEDC106F27522EC100A13801 /* Nekozilla.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEDC106127522EC000A13801 /* Nekozilla.mp3 */; };
+		CEDC107027522EC100A13801 /* On & On.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEDC106227522EC000A13801 /* On & On.mp3 */; };
+		CEDC107127522EC100A13801 /* Blank.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEDC106327522EC000A13801 /* Blank.mp3 */; };
+		CEDC107227522EC100A13801 /* Adventures.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEDC106427522EC100A13801 /* Adventures.mp3 */; };
+		CEDC107327522EC100A13801 /* Shine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEDC106527522EC100A13801 /* Shine.mp3 */; };
+		CEDC107427522EC100A13801 /* Symbolism.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEDC106627522EC100A13801 /* Symbolism.mp3 */; };
+		CEDC107527522EC100A13801 /* My Heart.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEDC106727522EC100A13801 /* My Heart.mp3 */; };
+		CEDC107627522EC100A13801 /* Earth.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEDC106827522EC100A13801 /* Earth.mp3 */; };
+		CEDC107727522EC100A13801 /* Fade.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEDC106927522EC100A13801 /* Fade.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +37,24 @@
 		CE9219C5274DA76200801AE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE9219C7274DA76400801AE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE9219CA274DA76400801AE4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE9219D1274DAC9D00801AE4 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		CEDC105527522AA600A13801 /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		CEDC105627522AA600A13801 /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		CEDC105927522B3000A13801 /* musicPlayer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = musicPlayer.json; sourceTree = "<group>"; };
+		CEDC105C27522EBF00A13801 /* Jim Yosef.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Jim Yosef.mp3"; sourceTree = "<group>"; };
+		CEDC105D27522EC000A13801 /* Candyland.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Candyland.mp3; sourceTree = "<group>"; };
+		CEDC105E27522EC000A13801 /* Hope.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hope.mp3; sourceTree = "<group>"; };
+		CEDC105F27522EC000A13801 /* Light It Up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Light It Up.mp3"; sourceTree = "<group>"; };
+		CEDC106027522EC000A13801 /* Feel Good.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Feel Good.mp3"; sourceTree = "<group>"; };
+		CEDC106127522EC000A13801 /* Nekozilla.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Nekozilla.mp3; sourceTree = "<group>"; };
+		CEDC106227522EC000A13801 /* On & On.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "On & On.mp3"; sourceTree = "<group>"; };
+		CEDC106327522EC000A13801 /* Blank.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Blank.mp3; sourceTree = "<group>"; };
+		CEDC106427522EC100A13801 /* Adventures.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Adventures.mp3; sourceTree = "<group>"; };
+		CEDC106527522EC100A13801 /* Shine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shine.mp3; sourceTree = "<group>"; };
+		CEDC106627522EC100A13801 /* Symbolism.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Symbolism.mp3; sourceTree = "<group>"; };
+		CEDC106727522EC100A13801 /* My Heart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "My Heart.mp3"; sourceTree = "<group>"; };
+		CEDC106827522EC100A13801 /* Earth.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Earth.mp3; sourceTree = "<group>"; };
+		CEDC106927522EC100A13801 /* Fade.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fade.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +87,14 @@
 		CE9219C2274DA76200801AE4 /* PlayMusic */ = {
 			isa = PBXGroup;
 			children = (
+				CEDC105B27522E9C00A13801 /* Resource */,
 				CE9219C3274DA76200801AE4 /* PlayMusicApp.swift */,
 				CE9219C5274DA76200801AE4 /* ContentView.swift */,
+				CE9219D1274DAC9D00801AE4 /* SoundPlayer.swift */,
+				CEDC105527522AA600A13801 /* Music.swift */,
+				CEDC105627522AA600A13801 /* ModelData.swift */,
 				CE9219C7274DA76400801AE4 /* Assets.xcassets */,
+				CEDC105927522B3000A13801 /* musicPlayer.json */,
 				CE9219C9274DA76400801AE4 /* Preview Content */,
 			);
 			path = PlayMusic;
@@ -65,6 +106,27 @@
 				CE9219CA274DA76400801AE4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CEDC105B27522E9C00A13801 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC106427522EC100A13801 /* Adventures.mp3 */,
+				CEDC106327522EC000A13801 /* Blank.mp3 */,
+				CEDC105D27522EC000A13801 /* Candyland.mp3 */,
+				CEDC106827522EC100A13801 /* Earth.mp3 */,
+				CEDC106927522EC100A13801 /* Fade.mp3 */,
+				CEDC106027522EC000A13801 /* Feel Good.mp3 */,
+				CEDC105E27522EC000A13801 /* Hope.mp3 */,
+				CEDC105C27522EBF00A13801 /* Jim Yosef.mp3 */,
+				CEDC105F27522EC000A13801 /* Light It Up.mp3 */,
+				CEDC106727522EC100A13801 /* My Heart.mp3 */,
+				CEDC106127522EC000A13801 /* Nekozilla.mp3 */,
+				CEDC106227522EC000A13801 /* On & On.mp3 */,
+				CEDC106527522EC100A13801 /* Shine.mp3 */,
+				CEDC106627522EC100A13801 /* Symbolism.mp3 */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +187,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDC107427522EC100A13801 /* Symbolism.mp3 in Resources */,
+				CEDC106E27522EC100A13801 /* Feel Good.mp3 in Resources */,
+				CEDC106D27522EC100A13801 /* Light It Up.mp3 in Resources */,
+				CEDC106F27522EC100A13801 /* Nekozilla.mp3 in Resources */,
+				CEDC107027522EC100A13801 /* On & On.mp3 in Resources */,
+				CEDC107127522EC100A13801 /* Blank.mp3 in Resources */,
+				CEDC107327522EC100A13801 /* Shine.mp3 in Resources */,
+				CEDC107227522EC100A13801 /* Adventures.mp3 in Resources */,
+				CEDC106C27522EC100A13801 /* Hope.mp3 in Resources */,
+				CEDC107527522EC100A13801 /* My Heart.mp3 in Resources */,
 				CE9219CB274DA76400801AE4 /* Preview Assets.xcassets in Resources */,
+				CEDC107627522EC100A13801 /* Earth.mp3 in Resources */,
+				CEDC106A27522EC100A13801 /* Jim Yosef.mp3 in Resources */,
+				CEDC107727522EC100A13801 /* Fade.mp3 in Resources */,
 				CE9219C8274DA76400801AE4 /* Assets.xcassets in Resources */,
+				CEDC106B27522EC100A13801 /* Candyland.mp3 in Resources */,
+				CEDC105A27522B3000A13801 /* musicPlayer.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +215,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE9219C6274DA76200801AE4 /* ContentView.swift in Sources */,
+				CE9219D2274DAC9D00801AE4 /* SoundPlayer.swift in Sources */,
+				CEDC105827522AA600A13801 /* ModelData.swift in Sources */,
 				CE9219C4274DA76200801AE4 /* PlayMusicApp.swift in Sources */,
+				CEDC105727522AA600A13801 /* Music.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
