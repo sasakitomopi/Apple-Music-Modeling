@@ -8,108 +8,84 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    let soundPlayer = SoundPlayer()
-    
     var body: some View {
-        NavigationView{
-            List{
-                Group{
-                    //1
-                    Button {
-                        soundPlayer.playMusic1()
-                    } label: {
-                        Text("a")
-                    }
-                    //2
-                    Button {
-                        soundPlayer.playMusic2()
-                    } label: {
-                        Text("b")
-                    }
-                    //3
-                    Button {
-                        soundPlayer.playMusic3()
-                    } label: {
-                        Text("c")
-                    }
-                    //4
-                    Button {
-                        soundPlayer.playMusic4()
-                    } label: {
-                        Text("d")
-                    }
-                    //5
-                    Button {
-                        soundPlayer.playMusic5()
-                    } label: {
-                        Text("e")
-                    }
-                    //6
-                    Button {
-                        soundPlayer.playMusic6()
-                    } label: {
-                        Text("f")
-                    }
-                    //7
-                    Button {
-                        soundPlayer.playMusic7()
-                    } label: {
-                        Text("g")
-                    }
-                    //8
-                    Button {
-                        soundPlayer.playMusic8()
-                    } label: {
-                        Text("h")
-                    }
-                    //9
-                    Button {
-                        soundPlayer.playMusic9()
-                    } label: {
-                        Text("i")
-                    }
-                    //10
-                    Button {
-                        soundPlayer.playMusic10()
-                    } label: {
-                        Text("j")
-                    }
-//                    //11
-//                    Button {
-//                        soundPlayer.playMusic11()
-//                    } label: {
-//                        Text("k")
-//                    }
-//                    //12
-//                    Button {
-//                        soundPlayer.playMusic12()
-//                    } label: {
-//                        Text("l")
-//                    }
-//                    //13
-//                    Button {
-//                        soundPlayer.playMusic13()
-//                    } label: {
-//                        Text("m")
-//                    }
-//                    //14
-//                    Button {
-//                        soundPlayer.playMusic14()
-//                    } label: {
-//                        Text("n")
-//                    }
-                }
-                
-            }
-            .navigationBarTitle(Text("My Music"))
+        MainView()
+    }
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+                .previewDevice("iPhone 12 Pro")
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-            .previewDevice("iPhone 12 Pro")
+struct MainView: View{
+    init(){
+        
+    }
+    @State var offsetValue = false
+    @State var playValue = false
+    @State var currentPage = 1
+    
+    var body : some View{
+        TabView(selection: $currentPage){
+            Text("test1")
+                .tabItem{
+                    VStack{
+                        Image(systemName: "play.circle.fill")
+                            .foregroundColor(Color.red)
+                        Text("今すぐ聴く")
+                    }
+                }.tag(1)
+            
+            Text("test2")
+                .tabItem{
+                    VStack{
+                        Image(systemName: "archivebox")
+                            .foregroundColor(Color.gray)
+                        Text("見つける")
+                    }
+                }.tag(2)
+            
+            Text("test3")
+                .tabItem{
+                    VStack{
+                        Image(systemName: "dot.radiowaves.left.and.right")
+                            .foregroundColor(Color.gray)
+                        Text("ラジオ")
+                    }
+                }.tag(3)
+            
+            PlayImpl()
+                .tabItem{
+                    VStack{
+                        Image(systemName: "music.note.list")
+                            .foregroundColor(Color.gray)
+                        Text("ライブラリ")
+                    }
+                }.tag(4)
+            
+            Text("test5")
+                .tabItem{
+                    VStack{
+                        Image(systemName: "magnifyingglass")
+                            .foregroundColor(Color.gray)
+                        Text("検索")
+                    }
+                }.tag(5)
+            
+        }
+
+        if(playValue){
+            ZStack{
+                PopUpImpl(soundPlayer: "What do you want play music?")
+            }.offset(x: 0, y: offsetValue ? 0 : 300)
+                .onAppear{
+                    withAnimation(Animation.default.repeatCount(1)){
+                        offsetValue.toggle()
+                    }
+                }
+        }
     }
 }

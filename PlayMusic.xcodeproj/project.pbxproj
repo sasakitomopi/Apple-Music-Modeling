@@ -12,6 +12,8 @@
 		CE9219C8274DA76400801AE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9219C7274DA76400801AE4 /* Assets.xcassets */; };
 		CE9219CB274DA76400801AE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9219CA274DA76400801AE4 /* Preview Assets.xcassets */; };
 		CE9219D2274DAC9D00801AE4 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9219D1274DAC9D00801AE4 /* SoundPlayer.swift */; };
+		CEC866A0279D3AC20070D5BA /* PlayImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8669F279D3AC20070D5BA /* PlayImpl.swift */; };
+		CEC866A3279D40510070D5BA /* PopUpImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC866A2279D40510070D5BA /* PopUpImpl.swift */; };
 		CEDC105727522AA600A13801 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC105527522AA600A13801 /* Music.swift */; };
 		CEDC105827522AA600A13801 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC105627522AA600A13801 /* ModelData.swift */; };
 		CEDC105A27522B3000A13801 /* musicPlayer.json in Resources */ = {isa = PBXBuildFile; fileRef = CEDC105927522B3000A13801 /* musicPlayer.json */; };
@@ -38,6 +40,8 @@
 		CE9219C7274DA76400801AE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE9219CA274DA76400801AE4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE9219D1274DAC9D00801AE4 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		CEC8669F279D3AC20070D5BA /* PlayImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayImpl.swift; sourceTree = "<group>"; };
+		CEC866A2279D40510070D5BA /* PopUpImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpImpl.swift; sourceTree = "<group>"; };
 		CEDC105527522AA600A13801 /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		CEDC105627522AA600A13801 /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		CEDC105927522B3000A13801 /* musicPlayer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = musicPlayer.json; sourceTree = "<group>"; };
@@ -89,10 +93,11 @@
 			children = (
 				CEDC105B27522E9C00A13801 /* Resource */,
 				CE9219C3274DA76200801AE4 /* PlayMusicApp.swift */,
+				CEC8669F279D3AC20070D5BA /* PlayImpl.swift */,
+				CEC866A2279D40510070D5BA /* PopUpImpl.swift */,
 				CE9219C5274DA76200801AE4 /* ContentView.swift */,
 				CE9219D1274DAC9D00801AE4 /* SoundPlayer.swift */,
-				CEDC105527522AA600A13801 /* Music.swift */,
-				CEDC105627522AA600A13801 /* ModelData.swift */,
+				CEC866A1279D3C200070D5BA /* Model */,
 				CE9219C7274DA76400801AE4 /* Assets.xcassets */,
 				CEDC105927522B3000A13801 /* musicPlayer.json */,
 				CE9219C9274DA76400801AE4 /* Preview Content */,
@@ -106,6 +111,15 @@
 				CE9219CA274DA76400801AE4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CEC866A1279D3C200070D5BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC105527522AA600A13801 /* Music.swift */,
+				CEDC105627522AA600A13801 /* ModelData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		CEDC105B27522E9C00A13801 /* Resource */ = {
@@ -215,8 +229,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE9219C6274DA76200801AE4 /* ContentView.swift in Sources */,
+				CEC866A3279D40510070D5BA /* PopUpImpl.swift in Sources */,
 				CE9219D2274DAC9D00801AE4 /* SoundPlayer.swift in Sources */,
 				CEDC105827522AA600A13801 /* ModelData.swift in Sources */,
+				CEC866A0279D3AC20070D5BA /* PlayImpl.swift in Sources */,
 				CE9219C4274DA76200801AE4 /* PlayMusicApp.swift in Sources */,
 				CEDC105727522AA600A13801 /* Music.swift in Sources */,
 			);
