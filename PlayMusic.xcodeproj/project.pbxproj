@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE52EDFC27EEEB270039DF13 /* RecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52EDFB27EEEB270039DF13 /* RecommendView.swift */; };
+		CE52EDFE27EEEC3F0039DF13 /* RecommendItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52EDFD27EEEC3F0039DF13 /* RecommendItem.swift */; };
+		CE5E531827EF1A0C001B114B /* LibraryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E531727EF1A0C001B114B /* LibraryRow.swift */; };
 		CE9219C4274DA76200801AE4 /* PlayMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9219C3274DA76200801AE4 /* PlayMusicApp.swift */; };
 		CE9219C6274DA76200801AE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9219C5274DA76200801AE4 /* ContentView.swift */; };
 		CE9219C8274DA76400801AE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9219C7274DA76400801AE4 /* Assets.xcassets */; };
 		CE9219CB274DA76400801AE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9219CA274DA76400801AE4 /* Preview Assets.xcassets */; };
 		CE9219D2274DAC9D00801AE4 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9219D1274DAC9D00801AE4 /* SoundPlayer.swift */; };
-		CEC866A0279D3AC20070D5BA /* PlayImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8669F279D3AC20070D5BA /* PlayImpl.swift */; };
+		CEBB8C1327EEE01400F6BBDF /* ContentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB8C1227EEE01400F6BBDF /* ContentRow.swift */; };
+		CEBB8C1527EEE3B800F6BBDF /* MrsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB8C1427EEE3B800F6BBDF /* MrsItem.swift */; };
+		CEC866A0279D3AC20070D5BA /* LibraryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8669F279D3AC20070D5BA /* LibraryList.swift */; };
 		CEC866A3279D40510070D5BA /* PopUpImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC866A2279D40510070D5BA /* PopUpImpl.swift */; };
+		CEC9904027EF0E02003155A2 /* LibrarySource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC9903F27EF0E02003155A2 /* LibrarySource.swift */; };
 		CEDC105727522AA600A13801 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC105527522AA600A13801 /* Music.swift */; };
 		CEDC105827522AA600A13801 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC105627522AA600A13801 /* ModelData.swift */; };
 		CEDC105A27522B3000A13801 /* musicPlayer.json in Resources */ = {isa = PBXBuildFile; fileRef = CEDC105927522B3000A13801 /* musicPlayer.json */; };
@@ -31,17 +37,25 @@
 		CEDC107527522EC100A13801 /* My Heart.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEDC106727522EC100A13801 /* My Heart.mp3 */; };
 		CEDC107627522EC100A13801 /* Earth.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEDC106827522EC100A13801 /* Earth.mp3 */; };
 		CEDC107727522EC100A13801 /* Fade.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEDC106927522EC100A13801 /* Fade.mp3 */; };
+		CEF44EE927EC9B44004FB20E /* ListenNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF44EE827EC9B44004FB20E /* ListenNow.swift */; };
+		CEF44EEB27ECA29B004FB20E /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF44EEA27ECA29B004FB20E /* PageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE52EDFB27EEEB270039DF13 /* RecommendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendView.swift; sourceTree = "<group>"; };
+		CE52EDFD27EEEC3F0039DF13 /* RecommendItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendItem.swift; sourceTree = "<group>"; };
+		CE5E531727EF1A0C001B114B /* LibraryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryRow.swift; sourceTree = "<group>"; };
 		CE9219C0274DA76200801AE4 /* PlayMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9219C3274DA76200801AE4 /* PlayMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMusicApp.swift; sourceTree = "<group>"; };
 		CE9219C5274DA76200801AE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE9219C7274DA76400801AE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE9219CA274DA76400801AE4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE9219D1274DAC9D00801AE4 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
-		CEC8669F279D3AC20070D5BA /* PlayImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayImpl.swift; sourceTree = "<group>"; };
+		CEBB8C1227EEE01400F6BBDF /* ContentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRow.swift; sourceTree = "<group>"; };
+		CEBB8C1427EEE3B800F6BBDF /* MrsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrsItem.swift; sourceTree = "<group>"; };
+		CEC8669F279D3AC20070D5BA /* LibraryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryList.swift; sourceTree = "<group>"; };
 		CEC866A2279D40510070D5BA /* PopUpImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpImpl.swift; sourceTree = "<group>"; };
+		CEC9903F27EF0E02003155A2 /* LibrarySource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrarySource.swift; sourceTree = "<group>"; };
 		CEDC105527522AA600A13801 /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		CEDC105627522AA600A13801 /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		CEDC105927522B3000A13801 /* musicPlayer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = musicPlayer.json; sourceTree = "<group>"; };
@@ -59,6 +73,8 @@
 		CEDC106727522EC100A13801 /* My Heart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "My Heart.mp3"; sourceTree = "<group>"; };
 		CEDC106827522EC100A13801 /* Earth.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Earth.mp3; sourceTree = "<group>"; };
 		CEDC106927522EC100A13801 /* Fade.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fade.mp3; sourceTree = "<group>"; };
+		CEF44EE827EC9B44004FB20E /* ListenNow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenNow.swift; sourceTree = "<group>"; };
+		CEF44EEA27ECA29B004FB20E /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,12 +107,17 @@
 		CE9219C2274DA76200801AE4 /* PlayMusic */ = {
 			isa = PBXGroup;
 			children = (
+				CEC9903E27EF0BA4003155A2 /* Library */,
 				CEDC105B27522E9C00A13801 /* Resource */,
 				CE9219C3274DA76200801AE4 /* PlayMusicApp.swift */,
-				CEC8669F279D3AC20070D5BA /* PlayImpl.swift */,
 				CEC866A2279D40510070D5BA /* PopUpImpl.swift */,
 				CE9219C5274DA76200801AE4 /* ContentView.swift */,
-				CE9219D1274DAC9D00801AE4 /* SoundPlayer.swift */,
+				CEF44EE827EC9B44004FB20E /* ListenNow.swift */,
+				CEF44EEA27ECA29B004FB20E /* PageView.swift */,
+				CEBB8C1227EEE01400F6BBDF /* ContentRow.swift */,
+				CEBB8C1427EEE3B800F6BBDF /* MrsItem.swift */,
+				CE52EDFB27EEEB270039DF13 /* RecommendView.swift */,
+				CE52EDFD27EEEC3F0039DF13 /* RecommendItem.swift */,
 				CEC866A1279D3C200070D5BA /* Model */,
 				CE9219C7274DA76400801AE4 /* Assets.xcassets */,
 				CEDC105927522B3000A13801 /* musicPlayer.json */,
@@ -120,6 +141,17 @@
 				CEDC105627522AA600A13801 /* ModelData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CEC9903E27EF0BA4003155A2 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				CEC8669F279D3AC20070D5BA /* LibraryList.swift */,
+				CE9219D1274DAC9D00801AE4 /* SoundPlayer.swift */,
+				CEC9903F27EF0E02003155A2 /* LibrarySource.swift */,
+				CE5E531727EF1A0C001B114B /* LibraryRow.swift */,
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 		CEDC105B27522E9C00A13801 /* Resource */ = {
@@ -232,9 +264,17 @@
 				CEC866A3279D40510070D5BA /* PopUpImpl.swift in Sources */,
 				CE9219D2274DAC9D00801AE4 /* SoundPlayer.swift in Sources */,
 				CEDC105827522AA600A13801 /* ModelData.swift in Sources */,
-				CEC866A0279D3AC20070D5BA /* PlayImpl.swift in Sources */,
+				CEC866A0279D3AC20070D5BA /* LibraryList.swift in Sources */,
+				CEF44EE927EC9B44004FB20E /* ListenNow.swift in Sources */,
+				CEBB8C1527EEE3B800F6BBDF /* MrsItem.swift in Sources */,
+				CE52EDFC27EEEB270039DF13 /* RecommendView.swift in Sources */,
+				CE52EDFE27EEEC3F0039DF13 /* RecommendItem.swift in Sources */,
 				CE9219C4274DA76200801AE4 /* PlayMusicApp.swift in Sources */,
+				CEF44EEB27ECA29B004FB20E /* PageView.swift in Sources */,
+				CEBB8C1327EEE01400F6BBDF /* ContentRow.swift in Sources */,
+				CEC9904027EF0E02003155A2 /* LibrarySource.swift in Sources */,
 				CEDC105727522AA600A13801 /* Music.swift in Sources */,
+				CE5E531827EF1A0C001B114B /* LibraryRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,29 +15,37 @@ struct ContentView: View {
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
             ContentView()
+                .environmentObject(ModelData())
                 .previewDevice("iPhone 12 Pro")
         }
     }
 }
 
 struct MainView: View{
-    init(){
-        
-    }
     @State var offsetValue = false
     @State var playValue = false
-    @State var currentPage = 1
+    
+    //refer to Tab and substitute listenNow
+    @State private var selection: Tab = .listenNow
+    
+    enum Tab{
+        case listenNow
+        case findout
+        case radio
+        case library
+        case search
+    }
     
     var body : some View{
-        TabView(selection: $currentPage){
-            Text("test1")
+        TabView(selection: $selection){
+            ListenNow()
                 .tabItem{
                     VStack{
                         Image(systemName: "play.circle.fill")
                             .foregroundColor(Color.red)
                         Text("今すぐ聴く")
                     }
-                }.tag(1)
+                }.tag(Tab.listenNow)
             
             Text("test2")
                 .tabItem{
@@ -46,7 +54,7 @@ struct MainView: View{
                             .foregroundColor(Color.gray)
                         Text("見つける")
                     }
-                }.tag(2)
+                }.tag(Tab.findout)
             
             Text("test3")
                 .tabItem{
@@ -55,16 +63,16 @@ struct MainView: View{
                             .foregroundColor(Color.gray)
                         Text("ラジオ")
                     }
-                }.tag(3)
+                }.tag(Tab.radio)
             
-            PlayImpl()
+            LibraryList()
                 .tabItem{
                     VStack{
                         Image(systemName: "music.note.list")
                             .foregroundColor(Color.gray)
                         Text("ライブラリ")
                     }
-                }.tag(4)
+                }.tag(Tab.library)
             
             Text("test5")
                 .tabItem{
@@ -73,19 +81,19 @@ struct MainView: View{
                             .foregroundColor(Color.gray)
                         Text("検索")
                     }
-                }.tag(5)
+                }.tag(Tab.search)
             
         }
-
-        if(playValue){
-            ZStack{
-                PopUpImpl(soundPlayer: "What do you want play music?")
-            }.offset(x: 0, y: offsetValue ? 0 : 300)
-                .onAppear{
-                    withAnimation(Animation.default.repeatCount(1)){
-                        offsetValue.toggle()
-                    }
-                }
-        }
+        
+        //        if(playValue){
+        //            ZStack{
+        //                PopUpImpl(soundPlayer: "What do you want play music?")
+        //            }.offset(x: 0, y: offsetValue ? 0 : 300)
+        //                .onAppear{
+        //                    withAnimation(Animation.default.repeatCount(1)){
+        //                        offsetValue.toggle()
+        //                    }
+        //                }
+        //        }
     }
 }

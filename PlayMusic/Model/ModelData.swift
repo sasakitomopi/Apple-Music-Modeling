@@ -6,9 +6,12 @@
 //
 
 import Foundation
+import Combine
 
-//Load json File
-var musics : [Music] = load("musicPlayer.json")
+final class ModelData : ObservableObject{
+    //Load json File
+    @Published var musics : [Music] = load("musicPlayer.json")
+}
 
 func load<T: Decodable>(_ filename:String) ->T{
     let data:Data
