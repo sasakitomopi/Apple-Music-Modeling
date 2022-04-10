@@ -12,7 +12,7 @@ struct ContentRow: View {
         VStack(alignment: .leading){
             Text("Top Songs")
                 .font(.headline)
-            ScrollView(.horizontal){
+            ScrollView(.horizontal,showsIndicators: false){
                 MrsItem()
             }
         }

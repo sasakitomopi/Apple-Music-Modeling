@@ -11,6 +11,22 @@ import Combine
 final class ModelData : ObservableObject{
     //Load json File
     @Published var musics : [Music] = load("musicPlayer.json")
+    @Published var result : [Music] = []
+    @Published var searchText = ""
+    @Published var liked = true
+    @Published var slider : Double = 0
+    @Published var isPlaying = true
+    
+    func fetchFamilyNames() {
+        if searchText.isEmpty {
+            return
+        } else {
+            return result = musics.filter {
+                //musics.equals $0
+                $0.song.contains(searchText) || $0.artist.contains(searchText)
+            }
+        }
+    }
 }
 
 func load<T: Decodable>(_ filename:String) ->T{

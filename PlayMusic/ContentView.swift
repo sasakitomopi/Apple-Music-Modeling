@@ -22,8 +22,6 @@ struct ContentView: View {
 }
 
 struct MainView: View{
-    @State var offsetValue = false
-    @State var playValue = false
     
     //refer to Tab and substitute listenNow
     @State private var selection: Tab = .listenNow
@@ -47,24 +45,6 @@ struct MainView: View{
                     }
                 }.tag(Tab.listenNow)
             
-            Text("test2")
-                .tabItem{
-                    VStack{
-                        Image(systemName: "archivebox")
-                            .foregroundColor(Color.gray)
-                        Text("見つける")
-                    }
-                }.tag(Tab.findout)
-            
-            Text("test3")
-                .tabItem{
-                    VStack{
-                        Image(systemName: "dot.radiowaves.left.and.right")
-                            .foregroundColor(Color.gray)
-                        Text("ラジオ")
-                    }
-                }.tag(Tab.radio)
-            
             LibraryList()
                 .tabItem{
                     VStack{
@@ -74,7 +54,7 @@ struct MainView: View{
                     }
                 }.tag(Tab.library)
             
-            Text("test5")
+            SearchBar()
                 .tabItem{
                     VStack{
                         Image(systemName: "magnifyingglass")
@@ -84,16 +64,5 @@ struct MainView: View{
                 }.tag(Tab.search)
             
         }
-        
-        //        if(playValue){
-        //            ZStack{
-        //                PopUpImpl(soundPlayer: "What do you want play music?")
-        //            }.offset(x: 0, y: offsetValue ? 0 : 300)
-        //                .onAppear{
-        //                    withAnimation(Animation.default.repeatCount(1)){
-        //                        offsetValue.toggle()
-        //                    }
-        //                }
-        //        }
     }
 }

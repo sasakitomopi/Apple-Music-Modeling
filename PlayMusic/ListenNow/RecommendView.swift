@@ -12,7 +12,7 @@ struct RecommendView: View {
         VStack(alignment:.leading){
             Text("Recommend Songs")
                 .font(.headline)
-            ScrollView(.horizontal){
+            ScrollView(.horizontal,showsIndicators: false){
                 RecommendItem()
             }
         }

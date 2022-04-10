@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct LibraryRow: View {
+    var music : Music
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            HStack{
+                Image("ncs")
+                    .resizable()
+                    .frame(width: 70, height: 70)
+                    .cornerRadius(3)
+                VStack(alignment: .leading){
+                    Text(music.song)
+                    Text(music.artist)
+                        .foregroundColor(Color.gray)
+                }
+            }
+        }
     }
 }
 
-struct LibraryRow_Previews: PreviewProvider {
-    static var previews: some View {
-        LibraryRow()
-    }
-}

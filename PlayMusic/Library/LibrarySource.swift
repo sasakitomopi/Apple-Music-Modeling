@@ -8,37 +8,24 @@
 import SwiftUI
 
 struct LibrarySource: View {
+    @State var playValue = false
+    @State var offsetValue = false
     var music : Music
     var body: some View {
         VStack{
             HStack{
-                Image("NEWMYNORMAL")
-                    .resizable()
-                    .frame(width: 70, height: 70)
-                VStack(alignment: .leading){
-                    Text(music.song)
-                    Text(music.artist)
-                        .foregroundColor(Color.gray)
-                }
+                LibraryRow(music: music)
             }
         }
+        //        if(playValue){
+        //            ZStack{
+        //                PopUpImpl(soundPlayer: "What do you want play music?")
+        //            }.offset(x: 0, y: offsetValue ? 0 : 300)
+        //                .onAppear{
+        //                    withAnimation(Animation.default.repeatCount(1)){
+        //                        offsetValue.toggle()
+        //                    }
+        //                }
+        //        }
     }
 }
-
-//struct LibrarySource_Previews: PreviewProvider {
-//
-//    static var librarySource = ModelData().musics
-//
-//        static var previews: some View{
-//
-//        Group{
-//            //JSONファイルの一行目を呼び出すためのコード
-//            LibrarySource(music: librarySource[0])
-//
-//            //JSONファイルの二行目を呼び出すためのコード
-//            LibrarySource(music: librarySource[1])
-//
-//        }
-//        .previewLayout(.fixed(width: 300, height: 70))
-//    }
-//}
