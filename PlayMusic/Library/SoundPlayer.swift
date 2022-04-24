@@ -14,11 +14,11 @@ class SoundPlayer: NSObject {
     init(musicContent : Music){
         self.musicContent = musicContent
     }
-    
+
     //Declare Variable
     private var musicPlayer : AVAudioPlayer! {
         didSet {
-//            print("!!!", musicPlayer)
+            print("!!!", musicPlayer)
         }
     }
     
@@ -39,37 +39,37 @@ class SoundPlayer: NSObject {
         }
     }
     
-//    func pauseMusic() {
-//        do{
-//            //Declare MusicContent
-//            let musicData = NSDataAsset(name: musicContent.song)!.data
-//
-//            //import AudioData
-//            musicPlayer = try AVAudioPlayer(data: musicData)
-//
-//            //pause Music
-//            musicPlayer.pause()
-//        }catch{
-//            print("You hava a Error import AudioData!!")
-//        }
-//
-//    }
+    func pauseMusic() {
+        do{
+            //Declare MusicContent
+            let musicData = NSDataAsset(name: musicContent.song)!.data
+
+            //import AudioData
+            musicPlayer = try AVAudioPlayer(data: musicData)
+
+            //pause Music
+            musicPlayer.pause()
+        }catch{
+            print("You hava a Error import AudioData!!")
+        }
+
+    }
 //
     func stopMusic(){
-//        //pause Music
-//        do{
-//            let musicData = NSDataAsset(name: musicContent.song)!.data
-//
-//            //import AudioData
-//            musicPlayer = try AVAudioPlayer(data: musicData)
-//
-//            if(musicPlayer.isPlaying){
-//                //stop Music
-//                musicPlayer.stop()
-//            }
-//        }catch{
-//            print("You hava a Error import AudioData!!")
-//        }
+        //pause Music
+        do{
+            let musicData = NSDataAsset(name: musicContent.song)!.data
+
+            //import AudioData
+            musicPlayer = try AVAudioPlayer(data: musicData)
+
+            if(musicPlayer.isPlaying){
+                //stop Music
+                musicPlayer.stop()
+            }
+        }catch{
+            print("You hava a Error import AudioData!!")
+        }
     }
     
 //    func startSynchronizedPlayback(){

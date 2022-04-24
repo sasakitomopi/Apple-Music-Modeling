@@ -16,7 +16,7 @@ final class ModelData : ObservableObject{
     @Published var liked = true
     @Published var slider : Double = 0
     @Published var isPlaying = true
-    
+
     func fetchFamilyNames() {
         if searchText.isEmpty {
             return

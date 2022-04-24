@@ -7,8 +7,7 @@
 
 import SwiftUI
 
-var soundPlayer: SoundPlayer!
-
+private var soundPlayer: SoundPlayer!
 struct LibraryList : View {
     @EnvironmentObject var modelData : ModelData
     @State private var playMusic = false
@@ -24,7 +23,7 @@ struct LibraryList : View {
                             soundPlayer = SoundPlayer(musicContent: music)
                             soundPlayer.playMusic()
                             playMusic.toggle()
-                            print("##", soundPlayer)
+//                            print("##", soundPlayer)
                         } label: {
                             LibrarySource(music: music)
                         }
